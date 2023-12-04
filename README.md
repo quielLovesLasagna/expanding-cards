@@ -2,6 +2,8 @@
 
 A card simple card component that expands smoothly.
 
+Live site URL: (https://quiel-expanding-card.netlify.app/)[https://quiel-expanding-card.netlify.app/]
+
 ## Table of contents
 
 - [Overview](#overview)
