@@ -43,6 +43,22 @@ body {
 	transition: flex 0.7s ease-in;
 }
 
+.panel-1 {
+	background-image: url(img/img-1.jpg);
+}
+.panel-2 {
+	background-image: url(img/img-2.jpg);
+}
+.panel-3 {
+	background-image: url(img/img-3.jpg);
+}
+.panel-4 {
+	background-image: url(img/img-4.jpg);
+}
+.panel-5 {
+	background-image: url(img/img-5.jpg);
+}
+
 .panel h3 {
 	position: absolute;
 	font-size: 2.4rem;
@@ -71,20 +87,4 @@ body {
 	.panel:nth-of-type(5) {
 		display: none;
 	}
-}
-
-.panel-1 {
-	background-image: url(img/img-1.jpg);
-}
-.panel-2 {
-	background-image: url(img/img-2.jpg);
-}
-.panel-3 {
-	background-image: url(img/img-3.jpg);
-}
-.panel-4 {
-	background-image: url(img/img-4.jpg);
-}
-.panel-5 {
-	background-image: url(img/img-5.jpg);
 }
