@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+
+/* Container */
+.container {
+	display: flex;
+	width: 90vw;
+}
+
+/* Panel */
+.panel {
+	background-size: auto 100%;
+	background-position-x: center;
+	background-repeat: no-repeat;
+	height: 80vh;
+	border-radius: 5rem;
+	color: #fff;
+	cursor: pointer;
+	flex: 0.5;
+	margin: 1rem;
+	position: relative;
+	transition: flex 0.7s ease-in;
+}
+
+.panel h3 {
+	position: absolute;
+	font-size: 2.4rem;
+	bottom: 2rem;
+	left: 2rem;
+	text-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.7);
+	opacity: 0;
+}
+
+.panel.active {
+	flex: 5;
+}
+
+.panel.active h3 {
+	opacity: 1;
+	transition: opacity 0.3s ease-in 0.4s;
+}
+
+/* Media Query: < 480px */
+@media (max-width: 30em) {
+	.container {
+		width: 100vw;
+	}
+
+	.panel:nth-of-type(4),
+	.panel:nth-of-type(5) {
+		display: none;
+	}
+}
+
+.panel-1 {
+	background-image: url(img/img-1.jpg);
+}
+.panel-2 {
+	background-image: url(img/img-2.jpg);
+}
+.panel-3 {
+	background-image: url(img/img-3.jpg);
+}
+.panel-4 {
+	background-image: url(img/img-4.jpg);
+}
+.panel-5 {
+	background-image: url(img/img-5.jpg);
+}
